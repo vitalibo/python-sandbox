@@ -5,3 +5,4 @@ Sandbox for tiny Python projects
 ### Content
 
 - [Tic-Tac-Toe](tictactoe/) - simple implementation of classic Tic-Tac-Toe game;
+- [Sudoku](sudoku/) - simple implementation of classic Sudoku game;
