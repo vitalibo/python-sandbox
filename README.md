@@ -8,3 +8,4 @@ Sandbox for tiny Python projects
 - [Sudoku](sudoku/) - simple implementation of classic Sudoku game;
 - [2048](2048/) - single-player sliding tile puzzle game;
 - [Minesweeper](minesweeper/) - simple implementation of classic Minesweeper game;
+- [Snake](snake/) - simple implementation of classic Snake game.
