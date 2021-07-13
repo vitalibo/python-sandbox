@@ -9,3 +9,4 @@ Sandbox for tiny Python projects
 - [2048](2048/) - single-player sliding tile puzzle game;
 - [Minesweeper](minesweeper/) - simple implementation of classic Minesweeper game;
 - [Snake](snake/) - simple implementation of classic Snake game.
+- [Pacman](pacman/) - simple implementation of classic Pac-Man game;
