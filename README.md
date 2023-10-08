@@ -10,3 +10,4 @@ Sandbox for tiny Python projects
 - [Minesweeper](minesweeper/) - simple implementation of classic Minesweeper game;
 - [Snake](snake/) - simple implementation of classic Snake game.
 - [Pacman](pacman/) - simple implementation of classic Pac-Man game;
+- [Flame](flame/) - simple flame animation;
