@@ -21,7 +21,6 @@ class FlameWidget(QWidget):
 
         self.palette = self.create_palette()
         self.data = np.zeros((height, width), dtype=np.uint8)
-        self.i = 0
 
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.refresh)
@@ -47,8 +46,6 @@ class FlameWidget(QWidget):
 
         # convert data to image using flame palette
         image = QImage(self.palette[self.data], self.data.shape[1], self.data.shape[0], QImage.Format_RGB32)
-        image.save(f"flame_{self.i}.png")
-        self.i = self.i + 1
         self.pixmap.convertFromImage(image)
 
         self.update()
