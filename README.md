@@ -11,3 +11,4 @@ Sandbox for tiny Python projects
 - [Snake](snake/) - simple implementation of classic Snake game.
 - [Pacman](pacman/) - simple implementation of classic Pac-Man game;
 - [Flame](flame/) - simple flame animation;
+- [Hamming Code](hamming_code/) - error-correcting code that can detect and correct single-bit errors;
