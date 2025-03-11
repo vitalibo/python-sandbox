@@ -52,11 +52,11 @@ Encoding:
 | P4            |       |       |    |       |    |    |    | **0** | 1  | 1  | 1  | 1  | 1  | 1   | 0   |       |
 | Pn-1          | 1     | 0     | 0  | 0     | 0  | 1  | 0  | 0     | 1  | 1  | 1  | 1  | 1  | 1   | 0   | **0** |
 
-- `P1` = `D1 xor D2 xor D4 xor D5 xor D7 xor D8 xor D10 xor D11` = `1 xor 0 xor 0 xor 1 xor 0 xor 0 xor 1 xor 0` = `1`
-- `P2` = `D1 xor D3 xor D4 xor D6 xor D7 xor D9 xor D10 xor D11` = `1 xor 0 xor 0 xor 0 xor 0 xor 1 xor 1 xor 0` = `0`
-- `P3` = `D2 xor D3 xor D4 xor D8 xor D9 xor D10 xor D11` = `0 xor 1 xor 0 xor 1 xor 1 xor 1 xor 0` = `0`
-- `P4` = `D5 xor D6 xor D7 xor D8 xor D9 xor D10 xor D11` = `1 xor 1 xor 1 xor 1 xor 1 xor 1 xor 0` = `0`
-- `Pn-1` = `P1 xor P2 xor D1 xor P3 xor D2 xor D3 xor D4 xor P4 xor D5 xor D6 xor D7 xor D8 xor D9 xor D10 xor D11` = `1 xor 0  xor 0 xor 0 xor 0 xor 1 xor 0 xor 0 xor 1 xor 1 xor 1 xor 1 xor 1 xor 1 xor 0` = `0`
+- `P1` = `D1 ⊕ D2 ⊕ D4 ⊕ D5 ⊕ D7 ⊕ D8 ⊕ D10 ⊕ D11` = `1 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 0` = `1`
+- `P2` = `D1 ⊕ D3 ⊕ D4 ⊕ D6 ⊕ D7 ⊕ D9 ⊕ D10 ⊕ D11` = `1 ⊕ 0 ⊕ 0 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 1 ⊕ 0` = `0`
+- `P3` = `D2 ⊕ D3 ⊕ D4 ⊕ D8 ⊕ D9 ⊕ D10 ⊕ D11` = `0 ⊕ 1 ⊕ 0 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 0` = `0`
+- `P4` = `D5 ⊕ D6 ⊕ D7 ⊕ D8 ⊕ D9 ⊕ D10 ⊕ D11` = `1 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 0` = `0`
+- `Pn-1` = `P1 ⊕ P2 ⊕ D1 ⊕ P3 ⊕ D2 ⊕ D3 ⊕ D4 ⊕ P4 ⊕ D5 ⊕ D6 ⊕ D7 ⊕ D8 ⊕ D9 ⊕ D10 ⊕ D11` = `1 ⊕ 0  ⊕ 0 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 0` = `0`
 
 Decoding:
 
@@ -70,14 +70,14 @@ Decoding:
 | P4            |    |    |    |    |    |    |    | 0  | 1  | 0  | 1  | 1  | 1  | 1   | 0   |      | 1     |
 | Pn-1          | 1  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 1  | 0  | 1  | 1  | 1  | 1   | 0   | 0    |       |
 
-- `P1 xor D1 xor D2 xor D4 xor D5 xor D7 xor D8 xor D10 xor D11` = `1 xor 1 xor 0 xor 0 xor 1 xor 0 xor 0 xor 1 xor 0` = `0`
-- `P2 xor D1 xor D3 xor D4 xor D6 xor D7 xor D9 xor D10 xor D11` = `0 xor 1 xor 0 xor 0 xor 0 xor 1 xor 0 xor 1 xor 0` = `1`
-- `P3 xor D2 xor D3 xor D4 xor D8 xor D9 xor D10 xor D11` = `0 xor 0 xor 1 xor 0 xor 1 xor 1 xor 1 xor 0` = `0`
-- `P4 xor D5 xor D6 xor D7 xor D8 xor D9 xor D10 xor D11` = `0 xor 1 xor 0 xor 1 xor 1 xor 1 xor 1 xor 0` = `1`
+- `P1 ⊕ D1 ⊕ D2 ⊕ D4 ⊕ D5 ⊕ D7 ⊕ D8 ⊕ D10 ⊕ D11` = `1 ⊕ 1 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 0` = `0`
+- `P2 ⊕ D1 ⊕ D3 ⊕ D4 ⊕ D6 ⊕ D7 ⊕ D9 ⊕ D10 ⊕ D11` = `0 ⊕ 1 ⊕ 0 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 0 ⊕ 1 ⊕ 0` = `1`
+- `P3 ⊕ D2 ⊕ D3 ⊕ D4 ⊕ D8 ⊕ D9 ⊕ D10 ⊕ D11` = `0 ⊕ 0 ⊕ 1 ⊕ 0 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 0` = `0`
+- `P4 ⊕ D5 ⊕ D6 ⊕ D7 ⊕ D8 ⊕ D9 ⊕ D10 ⊕ D11` = `0 ⊕ 1 ⊕ 0 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 0` = `1`
 
 Error Position = `P4 P3 P2 P1` = `1 0 1 0` = `0b1010` = `10` or `9 (0-indexed)`
 
-- `P1 xor P2 xor D1 xor P3 xor D2 xor D3 xor D4 xor P4 xor D5 xor D6 xor D7 xor D8 xor D9 xor D10 xor D11` = `1 xor 0  xor 0 xor 0 xor 0 xor 1 xor 0 xor 0 xor 1 xor 0 xor 1 xor 1 xor 1 xor 1 xor 0` = `1`
+- `P1 ⊕ P2 ⊕ D1 ⊕ P3 ⊕ D2 ⊕ D3 ⊕ D4 ⊕ P4 ⊕ D5 ⊕ D6 ⊕ D7 ⊕ D8 ⊕ D9 ⊕ D10 ⊕ D11` = `1 ⊕ 0  ⊕ 0 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 0 ⊕ 0 ⊕ 1 ⊕ 0 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 1 ⊕ 0` = `1`
 
 Parity Check Bit (Pn-1) = `1`
 
